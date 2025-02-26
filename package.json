@@ -2,15 +2,17 @@
   "name": "indexplayermodule",
   "version": "1.0.0",
   "description": "A video player app for Tizen TV using IndexPlayer",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "echo 'Ready to use with TizenBrew'"
+    "start": "echo 'Ready to use with TizenBrew'",
+    "build": "mkdir -p dist && cp index.html main.js style.css dist/ && echo 'Built for TizenBrew'"
   },
   "keywords": ["tizen", "video", "player"],
-  "author": "YourName",
+  "author": "VishnuSrivatsava",
   "license": "ISC",
   "packageType": "app",
   "appName": "IndexPlayer",
-  "appPath": "index.html",
-  "keys": ["MediaPlay", "MediaStop", "MediaPause", "ArrowUp", "ArrowDown", "Enter", "Back"]
+  "appPath": "dist/index.html", 
+  "serviceFile": "dist/main.js", 
+  "keys": ["ArrowUp", "ArrowDown", "Enter", "Back", "MediaPlay", "MediaPause", "MediaStop"]
 }
